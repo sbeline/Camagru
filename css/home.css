@@ -1,0 +1,257 @@
+body {
+	min-width: 550px;
+}
+
+#container {
+	width: 500px;
+
+	padding: 20px 0px;
+	margin: auto;
+
+	text-align: center;
+
+	transition: 1s all;
+}
+
+/* List */
+ul {	
+ 	display: inline-block;
+ 	
+ 	width: 100%;
+
+ 	border: 1px solid grey;
+ 	border-radius: 2px;
+
+ 	list-style: none;
+
+	background-color: #0FBBB5;
+
+	box-shadow: 0px 0px 3px 0.5px grey;
+}
+
+ul li {
+	padding: 5px;
+
+	text-align: center;
+}
+
+#container > ul > li:nth-child(1) {
+	border-bottom: 1px solid black;
+
+	background-color: #DADADA;
+}
+
+#container #inputWrapper {
+	display: inline-block;
+	
+	width: 100%;
+}
+
+#container #inputWrapper .middle {
+	display: inline-block;
+
+	width: 49%;
+	
+	height: 120px;
+	line-height: 120px;
+
+	padding: 0;
+
+	background-color: #0FBBB5;
+
+	transition: all 0.5s;
+}
+
+#inputWrapper li:nth-child(1) {
+	border-right: 1px solid black;	
+}
+
+#container > ul > li:nth-last-child(1) {
+	border-top: 1px solid black;
+
+	background-color: #DADADA;
+
+	transition: all 0.5s;
+}
+
+#container > ul > li:nth-last-child(1):hover {
+	background-color: #BFBFBF;
+}
+
+/* gifs liste */
+ul #li_gif {
+	width: 100%;
+
+	height: 50px;
+	line-height: 25px;
+	
+	padding: 0;
+}
+
+ul #li_gif table {
+	width: 100%;
+
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-spacing: 0px;
+}
+
+ul #li_gif tr td {
+	width: 30%;
+	height: 55px;
+
+	cursor: pointer;
+
+	transition: background-color 1s;
+}
+
+ul #li_gif tr td:nth-child(1) {
+	background: url("../images/Cat_face.png") no-repeat;
+	background-size: 45px 45px;
+	background-position: center;
+}
+
+ul #li_gif tr td:nth-child(2) {
+	background: url("../images/Happy_face.png") no-repeat;
+	background-size: 45px 45px;
+	background-position: center;
+}
+
+ul #li_gif tr td:nth-child(3) {
+	background: url("../images/Poker_face.png") no-repeat;
+	background-size: 45px 45px;
+	background-position: center;
+}
+
+ul #li_gif tr td:hover {
+	background-color:  #19D2CB;
+}
+
+ul #li_gif tr td:not(:last-child) {
+	border-right: 1px solid black;
+}
+
+
+/* canvas  A CHANGER */
+video, canvas {
+	margin-top: 2px;
+}
+
+#canvasfile {
+	width: 500px;
+	height: 375px;
+
+	padding: 0;
+}
+
+#canvas_li, #canvasfile_li {
+	padding: 0;
+}
+
+canvas {
+	width: 500px;
+	height: 375px;
+
+	position: absolute;
+}
+
+#livid, #lifile {
+	height: 375px;
+
+	padding: 0;
+}
+
+.post {
+	margin-top: 20px; 
+
+	border: 1px solid grey;
+	border-radius: 3px;
+
+	box-shadow: 0px 0px 3px 0.5px grey;
+
+	background-color: #19D2CB;
+}
+
+.post p {
+	padding: 10px;
+
+	line-height: 10px; 
+}
+
+.post img {
+	width: 498px;
+
+	transition: 1s all;
+}
+
+#div_comment {
+	padding: 10px;
+}
+
+#div_comment input[type=submit] {
+	cursor: pointer;
+}
+
+.comment {
+	padding: 5px;
+
+	text-align: left;
+	border-bottom: 1px solid black;
+}
+
+.comment p {
+	-ms-word-break: break-all;
+    word-break: break-all;
+
+	padding: 4px;
+}
+
+.comment .content {
+	padding-left: 15px;
+}
+
+#likes {
+	text-align: left;
+	border-bottom: 1px solid black;
+
+	line-height: 18px;
+}
+
+#likes button {
+	cursor: pointer;
+}
+
+/* mobile portrait*/
+@media(max-width: 650px) {
+	body {
+		min-width: 400px;
+	}
+
+	#container, .post img{
+
+		width: 350px;
+
+		transition: 1s all;
+	}
+
+	#livid, #canvasfile, video, canvas, #lifile {
+		height: 260px;
+	}
+
+	video, canvas, #canvasfile {
+		width: 350px;
+	}
+
+	#livid {
+		margin-bottom: 2px;
+	}
+
+	#header_container #left {
+		float: none;
+		text-align: center;
+	}
+
+	header #right {
+		display: none;
+	}
+}
